@@ -11,9 +11,10 @@ import NotFound from './components/NotFound';
 
 
 const Root = () => {
-  const repo = `/${window.location.pathname.split('/')[1]}`;
+//  const repo = `/${window.location.pathname.split('/')[1]}`;
+// "homepage": "https://Itseasymike.github.io/fish-market/",
   return (
-    <BrowserRouter basename={repo}>
+    <BrowserRouter>
       <div>
         <Match exactly pattern="/" component={StorePicker} />
         <Match exactly pattern="/store/:storeId" component={App} />
